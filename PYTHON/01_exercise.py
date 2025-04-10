@@ -45,4 +45,24 @@ print("Las frutas elegidas son:")
 for fruta in fruta_aleatoria:
     print(fruta)
 
-### ejercicio 9
+### ejercicio 9 raiz cuadrada
+
+import math
+
+numeros = [2, 8, 15, 23, 91, 112, 256, 144, 36, 25]
+print("Números con raíz cuadrada entera:")
+
+for numero in numeros:
+    raiz = math.sqrt(numero)
+    if raiz.is_integer():
+        print(f"{numero} → raíz cuadrada: {int(raiz)}")
+
+### ejercicio 10
+
+import math
+
+precio_m2 = 50000
+radio = float(input("Introduce el radio del terreno en metros: "))
+area = math.pi * radio ** 2
+precio_total = area * precio_m2
+print(f"El precio total del terreno es: {precio_total:.2f} pesos")
