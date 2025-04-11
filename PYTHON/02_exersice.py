@@ -1,19 +1,19 @@
 # ejercicio 1
 lista = [16, 14, 63, 65, 17, 99, 70, 11, 20, 48, 79, 32, 17, 89, 12, 25, 66]
-# 1. Leer el tamaño de la lista
+
 tamano = len(lista)
 print(f"La lista tiene {tamano} números.")
-# 2. Leer el valor máximo y mínimo
+
 mayor = max(lista)
 menor = min(lista)
 print(f"El mayor es {mayor} y el menor es {menor}.")
-# 3. Calcular la suma de los valores de la lista
+
 suma = sum(lista)
 print(f"La suma de los valores es {suma}.")
-# 4. Mostrar un mensaje al final: La lista tiene `tamano` números, donde el mayor
+
 print(
     f"La lista tiene {tamano} números, donde el mayor es {mayor} y el menor es {menor}. La suma de los valores es {suma}.")
-# es `mayor` y el menor es `menor`. La suma de los valores es `suma`.
+
 sum = mayor + menor
 print(f"La suma de los valores es {sum}.")
 
