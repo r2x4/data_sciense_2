@@ -120,7 +120,7 @@ print(f"Con base en los gastos definidos, un viaje de {dias_viaje} días a {ciud
 # Frase de prueba
 frase = "Aprender Python aquí en Alura es muy bueno"
 
-# Reemplazar signos de puntuación por espacios (en este caso no hay, pero dejamos el paso por si se generaliza)
+
 frase = frase.replace(',', ' ').replace('.', ' ').replace('!', ' ').replace('?', ' ')
 
 palabras = frase.split()
