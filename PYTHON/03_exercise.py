@@ -123,12 +123,7 @@ frase = "Aprender Python aquí en Alura es muy bueno"
 # Reemplazar signos de puntuación por espacios (en este caso no hay, pero dejamos el paso por si se generaliza)
 frase = frase.replace(',', ' ').replace('.', ' ').replace('!', ' ').replace('?', ' ')
 
-# Separar la frase en palabras
 palabras = frase.split()
-
-# Filtrar las palabras con 5 o más caracteres usando lambda y filter
 palabras_filtradas = list(filter(lambda palabra: len(palabra) >= 5, palabras))
-
-# Mostrar el resultado
 print(palabras_filtradas)
 
