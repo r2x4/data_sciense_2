@@ -42,11 +42,6 @@ print('ventas mayores de 6000 en 2022:', ventas_mayores_2022)
 
 ###Una clínica analiza datos de pacientes y almacena el valor numérico de la glucosa en una base de datos y le gustaría etiquetar los datos de la siguiente manera:
 
-"""Glucosa igual o inferior a 70: 'Hipoglicemia'
-Glucosa entre 70 y 99: 'Normal'
-Glucosa entre 100 y 125: 'Alterada'
-Glucosa superior a 125: 'Diabetes'
-La clínica proporcionó parte de los valores y tu tarea es crear una lista de tuplas usando la comprensión de listas que contenga la etiqueta y el valor de la glucemia en cada tupla."""
 
 glicemia = [129, 82, 60, 97, 101, 65, 62, 167, 87, 53, 58, 92, 66, 120, 109, 62, 86, 96, 103, 88, 155, 52, 89, 73]
 
