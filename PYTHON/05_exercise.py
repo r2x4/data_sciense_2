@@ -91,7 +91,8 @@ def calcular_notas(respuestas, tests):
 # 6 ejercicio
 
 
-lista_tratada = ['Python', 'es', 'un', 'lenguaje', 'de', 'programación', 'poderoso', 'versátil','y', 'fácil', 'de', 'aprender', 'utilizado', 'en', 'diversos', 'campos', 'desde','análisis', 'de', 'datos', 'hasta', 'inteligencia', 'artificial']
+lista_tratada = ['Python', 'es', 'un', 'lenguaje', 'de', 'programación', 'poderoso', 'versátil', 'y', 'fácil', 'de', 'aprender',
+                 'utilizado', 'en', 'diversos', 'campos', 'desde', 'análisis', 'de', 'datos', 'hasta', 'inteligencia', 'artificial']
 
 lista_no_tratada = ['Python', 'es', 'un', 'lenguaje', 'de', 'programación', 'poderoso,', 'versátil',
                     'y', 'fácil,', 'de', 'aprender', 'utilizado', 'en', 'diversos', 'campos,', 'desde',
