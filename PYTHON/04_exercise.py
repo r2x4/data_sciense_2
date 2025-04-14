@@ -53,3 +53,54 @@ etiquetas_glicemia = [
     for valor in glicemia
 ]
 print('Etiquetas de glisemia:', etiquetas_glicemia)
+
+### ejercicio
+#Un comercio electrónico tiene información de id de venta, cantidad vendida y precio del producto divididos en las siguientes listas:#
+
+id = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+cantidad = [15, 12, 1, 15, 2, 11, 2, 12, 2, 4]
+precio = [93.0, 102.0, 18.0, 41.0, 122.0, 14.0, 71.0, 48.0, 14.0, 144.0]
+
+tabla = [('id', 'cantidad', 'precio', 'total')]
+
+for i in range(len(id)):
+    total = cantidad[i]* precio[i]
+    fila = (id[i], cantidad[i], precio[i], total)
+    tabla.append(fila)
+    
+for fila in tabla:
+    print(fila)
+    
+### ejercicion 9
+
+estados = ['CMX', 'OAX', 'PUE', 'PUE', 'CMX', 'PUE', 'OAX', 'OAX', 'OAX', 
+        'CMX', 'CMX', 'PUE', 'OAX', 'CMX', 'VER', 'PUE', 'VER', 'CMX', 
+        'PUE', 'CMX', 'OAX', 'CMX', 'PUE']
+
+# Diccionario con cantidad de sucursales por estado usando dict comprehension
+conteo_sucursales = {estado: estados.count(estado) for estado in set(estados)}
+
+print(conteo_sucursales)
+
+### ejercicio 10
+
+empleados = [
+    ('CMX', 16), ('OAX', 8), ('PUE', 9), ('PUE', 6), ('CMX', 10),
+    ('PUE', 4), ('OAX', 9), ('OAX', 7), ('OAX', 12), ('CMX', 7),
+    ('CMX', 11), ('PUE', 8), ('OAX', 8), ('CMX', 9), ('VER', 13),
+    ('PUE', 5), ('VER', 9), ('CMX', 12), ('PUE', 10), ('CMX', 7),
+    ('OAX', 14), ('CMX', 10), ('PUE', 12)
+]
+
+# Diccionario con listas de empleados por estado
+empleados_por_estado = {}
+for estado, num in empleados:
+    empleados_por_estado.setdefault(estado, []).append(num)
+
+# Diccionario con suma de empleados por estado
+suma_empleados_por_estado = {estado: sum(cantidades) for estado, cantidades in empleados_por_estado.items()}
+
+print("Empleados por estado:")
+print(empleados_por_estado)
+print("\nSuma de empleados por estado:")
+print(suma_empleados_por_estado)
